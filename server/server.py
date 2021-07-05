@@ -15,3 +15,4 @@ if __name__ == '__main__':
     print("Starting pythn flask server for image classification")
     util.load_saved_artifacts()
     app.run(port=5000)
+#server side
