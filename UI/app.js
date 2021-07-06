@@ -18,9 +18,9 @@ function init() {
     dz.on("complete", function (file) {
         let imageData = file.dataURL;
         
-        var url = "http://127.0.0.1:5000/classify_image";
+        var url = "http://127.0.0.1:5000/classify_image"; // 
 
-        $.post(url, {
+        $.post(url, {                       //jquery
             image_data: file.dataURL
         },function(data, status) {
             /* 
@@ -91,7 +91,7 @@ function init() {
     });
 }
 
-$(document).ready(function() {
+$(document).ready(function() {   
     console.log( "ready!" );
     $("#error").hide();
     $("#resultHolder").hide();
